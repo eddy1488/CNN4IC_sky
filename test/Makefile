@@ -6,7 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = tt_um_CNN4IC_sky.v comm_mem_top.v cnn_proc_top.v spi_cnn_slave_8.v SC_STATEMACHINE_CNN_CTRL.v SC_STATEMACHINE_IMAGE_LOADER.v SC_STATEMACHINE_WEIGHT_LOADER.v cnn_top.v mux_cnn.v fragment_mux_10x10_6x6.v window_mux_6x6_5x5.v mac_parallel.v progressive_maxpool.v Register_Imag.v Register_Weight.v Master_register.v Register.v
 
 ifneq ($(GATES),yes)
 
